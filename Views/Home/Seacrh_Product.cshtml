@@ -1,0 +1,24 @@
+﻿@model ClassifiedAds.Models.AdDetail
+@{
+    ViewBag.Title = "Seacrh_Product";
+    Layout = "~/Views/Shared/_MyLayoutPro.cshtml";
+}
+
+
+<div class="center_content">
+<div id="bodyPan">
+  		<h1><span ><strong><em style="margin-left:250px">Search Ads</em></strong></span></h1> <br />
+
+    	<form action="/Home/Search" method="post" class="form1">
+            <table style="margin-left:300px">
+		<tr><td><p>Enter Category</p></td>
+            <td>@Html.TextBox("cat", "")</td></tr>
+		
+        <tr><td><input type="submit" value="Search"/></td></tr>
+    </table>
+	</form>
+    </div>  
+    </div>
+
+         
+
